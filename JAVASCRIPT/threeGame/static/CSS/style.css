@@ -1,0 +1,125 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.baapContainer{
+   padding: 30px 0px;
+}
+
+.flex-box-container-1, .flex-box-rps, .flex-box-pick-color{
+   border: 1px solid black;
+   display: flex;
+   padding: 10px;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: space-around;
+}
+
+
+.flex-box-container-1 div{
+   padding: 10px;
+   border: 1px solid black;
+   
+}
+
+.container-1{
+  border: 2px solid blueviolet;
+  margin: 0 auto;
+  width: 75%;
+  text-align: center;
+}
+
+.container-1 h2{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.container-2, .container-3, .container-4{
+   border: 2px solid rgb(75, 6, 6);
+   width: 75%;
+   margin: 0 auto;
+   text-align: center;
+}
+
+.flex-box-container-2 {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   border: 1px solid blue;
+}
+
+.flex-box-container-2 img{
+   height: 10vw;
+   border: 2px solid greenyellow;
+   box-shadow: 0px 10px 10px rgba(0,0,0,0.6);
+   margin: 5px 5px;
+}
+
+.flex-box-rps img:hover{
+   box-shadow:0px 10px 50px rgba(17,50,233,1); 
+}
+
+/* Style flex-box-rps-div */
+
+
+/* Blackjack css */
+
+.container-5 {
+   border: 2px solid brown;
+   text-align: center;
+   width: 75%;
+   margin: 0 auto;
+}
+
+.flex-blackjack-row-1, .flex-blackjack-row-2 , .flex-blackjack-row-3{
+   border: 1px solid black;
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   padding: 10px;
+}
+
+.flex-blackjack-row-1, .flex-blackjack-row-2 {
+   background: url("/static/images/green.jpg") center;
+   color: #fff;
+}
+
+.flex-blackjack-row-1 div{
+   border: 1px solid black;
+   padding: 10px;
+   height: 350px;
+   text-align: center;
+   flex: 1;  /* width: 50%; */
+   
+}
+
+.flex-blackjack-row-1 img {
+   width: 25%;
+   padding: 10px;
+}
+
+/* #your-box, #dealer-box {
+   border: 1px solid black;
+  padding: 10px;
+  height: 350px;
+} */
+
+.flex-blackjack-row-2 button{
+   border: 1px solid black;
+   padding: 15px;
+}
+
+.flex-blackjack-row-2 div{
+   border: 1px solid black;
+   padding: 10px;
+}
+
+table, th ,td{
+   border: 1px solid black;
+   padding: 10px;
+}
+
+
