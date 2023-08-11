@@ -88,7 +88,7 @@ void returnBook()
 
 
 }
-public class Main {
+public class Library_management_system {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);

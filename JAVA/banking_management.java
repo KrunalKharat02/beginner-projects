@@ -137,7 +137,7 @@ public int totalAccounts()
 
 }
 
-public class Main {
+public class banking_management {
 
     public static void main(String[] args) {
         System.out.println("Enter Number of accounts :");
