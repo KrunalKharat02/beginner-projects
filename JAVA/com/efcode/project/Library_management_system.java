@@ -1,4 +1,4 @@
-package com.IIITG_PRIYANSHU;
+package com.efcode.project;
 import java.util.*;
 class BOOK {
     private int bookId;
@@ -88,7 +88,7 @@ void returnBook()
 
 
 }
-public class Main {
+public class Library_management_system {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);

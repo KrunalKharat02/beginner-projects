@@ -1,4 +1,5 @@
-package com.IIITG_PRIYANSHU;
+package com.efcode.project;
+
 import java.util.*;
 
 
@@ -51,7 +52,7 @@ class game
 
 
 }
-public class Main {
+public class Guess_the_number_game{
 
     public static void main(String[] args) {
 game player=new game();

@@ -1,4 +1,4 @@
-package com.IIITG_PRIYANSHU;
+package com.efcode.project;
 import java.util.*;
 
 class Account
@@ -137,7 +137,7 @@ public int totalAccounts()
 
 }
 
-public class Main {
+public class banking_management {
 
     public static void main(String[] args) {
         System.out.println("Enter Number of accounts :");
