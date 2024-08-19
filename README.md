@@ -1,11 +1,19 @@
 # beginner-projects
-- These are some cool Basic Projects For Beginners in language by folder.
-- This is open source project you can contribute to add beginner friendly projects in respective language
-- To contribute add your beginner friendly projects in the language folder which it is using and
-if there is no folder for language that is used in your project then add language folder and inside it add your project.
-project should be of only one file no multiple files!
-- for eg: snake game python project:
+- This repository is a collection of beginner-friendly projects organized by programming language, making it easier for new developers to get started. Whether you're looking to practice a new language or share your own simple projects, this open-source initiative is the perfect place to contribute and learn.
+
+How to Contribute
+We encourage you to contribute your beginner-friendly projects to help others in the community. Here’s how you can get involved:
+
+Adding a Project: If you have a project you'd like to share, simply place it in the folder corresponding to the programming language used.
+
+Creating a New Folder: If your project's language doesn’t have a folder yet, feel free to create one. Inside this new folder, add your project file.
+
+Single-File Projects Only: Please ensure that each project consists of only a single file. This helps maintain simplicity and focus for beginners.
+
+Example:
+If you have a Python project like a Snake game, you would add it as follows:
 beginner-projects > PYTHON > snake_game.py
+
 
 ## :ledger: Index
 
