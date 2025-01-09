@@ -1,68 +1,89 @@
-# beginner-projects
-- These are some cool Basic Projects For Beginners in language by folder.
-- This is open source project you can contribute to add beginner friendly projects in respective language
-- To contribute add your beginner friendly projects in the language folder which it is using and
-if there is no folder for language that is used in your project then add language folder and inside it add your project.
-project should be of only one file no multiple files!
-- for eg: snake game python project:
-beginner-projects > PYTHON > snake_game.py
+<h1>Beginner Projects</h1>
 
-## :ledger: Index
+<p>Welcome to the collection of <strong>Basic Projects for Beginners</strong> in various programming languages. This is an open-source project where you can contribute by adding beginner-friendly projects in the respective language folders.</p>
 
-- [About](#beginner-about)
-- [Usage](#zap-usage)
-  - [Installation](#electric_plug-installation)
-  - [Commands](#package-commands)
-- [Development](#wrench-development)
-  - [Pre-Requisites](#notebook-pre-requisites)
-  - [Developmen Environment](#nut_and_bolt-development-environment)
-  - [File Structure](#file_folder-file-structure)
-  - [Build](#hammer-build)  
-  - [Deployment](#rocket-deployment)  
-- [Community](#cherry_blossom-community)
-  - [Contribution](#fire-contribution)
-  - [Branches](#cactus-branches)
-  - [Guideline](#exclamation-guideline)  
-- [FAQ](#question-faq)
-- [Resources](#page_facing_up-resources)
-- [Gallery](#camera-gallery)
-- [Credit/Acknowledgment](#star2-creditacknowledgment)
-- [License](#lock-license)
+<p>If your project doesn't fit into an existing folder, feel free to create a new folder for your language and add your project there. Each project should consist of <strong>only one file</strong> (no multiple files).</p>
 
-##  :beginner: About
-These are some cool Basic Projects For Beginners in language by folder.
+<p>For example:</p>
+<pre>
+beginner-projects &gt; PYTHON &gt; snake_game.py
+</pre>
 
-## :zap: Usage
-Can be used by Beginners.
+<h2>📚 Table of Contents</h2>
+<ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#usage">Usage</a></li>
+    <ul>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#commands">Commands</a></li>
+    </ul>
+    <li><a href="#development">Development</a></li>
+    <ul>
+        <li><a href="#pre-requisites">Pre-Requisites</a></li>
+        <li><a href="#development-environment">Development Environment</a></li>
+        <li><a href="#file-structure">File Structure</a></li>
+        <li><a href="#build">Build</a></li>
+        <li><a href="#deployment">Deployment</a></li>
+    </ul>
+    <li><a href="#community">Community</a></li>
+    <ul>
+        <li><a href="#contribution">Contribution</a></li>
+        <li><a href="#branches">Branches</a></li>
+        <li><a href="#guideline">Guideline</a></li>
+    </ul>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#resources">Resources</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#creditacknowledgment">Credit/Acknowledgment</a></li>
+    <li><a href="#license">License</a></li>
+</ul>
 
-###  :electric_plug: Installation
-- To install any project just clone it and work on it in its specified language and environment.
+<h2>🌟 About</h2>
+<p>This repository contains basic beginner-level projects in various programming languages. It is designed for beginners to learn by contributing simple, single-file projects.</p>
 
-```
-$ add installations steps if you have to.
-```
+<h2>⚡ Usage</h2>
+<p>These projects are great for beginners to get hands-on practice with coding in different languages.</p>
 
-###  :package: Commands
-- Commands to start the project.
+<h3>💻 Installation</h3>
+<p>To install any project:</p>
+<ol>
+    <li>Clone the repository to your local machine.</li>
+    <li>Work with the project in the specified language and environment.</li>
+</ol>
+<pre>
+$ git clone https://github.com/yourusername/beginner-projects.git
+</pre>
 
-##  :wrench: Development
-If you want other people to contribute to this project, this is the section, make sure you always add this.
+<p><strong>Note:</strong> Add installation steps here if you have specific requirements.</p>
 
-### :notebook: Pre-Requisites
-List all the pre-requisites the system needs to develop this project.
-- A tool
-- B tool
+<h3>📦 Commands</h3>
+<p>Commands to start the project or run it. For example:</p>
+<pre>
+$ python snake_game.py
+</pre>
 
-###  :nut_and_bolt: Development Environment
-Write about setting up the working environment for your project.
-- How to download the project...
-- How to install dependencies...
+<h2>🔧 Development</h2>
+<p>If you'd like to contribute, here's how you can get started!</p>
 
+<h3>📝 Pre-Requisites</h3>
+<p>List all the tools or software required for development:</p>
+<ul>
+    <li>Tool A</li>
+    <li>Tool B</li>
+</ul>
 
-###  :file_folder: File Structure
-Add a file structure here with the basic details about files, below is an example.
+<h3>⚙️ Development Environment</h3>
+<p>Here's how you can set up the development environment:</p>
+<ol>
+    <li>Clone the repository.</li>
+    <li>Install any dependencies.</li>
+    <li>Set up the environment.</li>
+</ol>
+<p><strong>Note:</strong> Add more details about environment setup if necessary.</p>
 
-```
+<h3>📂 File Structure</h3>
+<p>Here’s the basic file structure of the repository:</p>
+<pre>
 .
 ├── PYTHON
 │   ├── snake_game.py
@@ -71,73 +92,67 @@ Add a file structure here with the basic details about files, below is an exampl
 ├── Java
 ├── Contributing.md
 └── README.md
-```
+</pre>
 
-###  :hammer: Build
-Write the build Instruction here.
+<h3>🔨 Build</h3>
+<p>Instructions for building or compiling the project.</p>
+<p><strong>Note:</strong> Add build instructions here.</p>
 
-### :rocket: Deployment
-Write the deployment instruction here.
+<h3>🚀 Deployment</h3>
+<p>Steps for deploying the project.</p>
+<p><strong>Note:</strong> Add deployment instructions here.</p>
 
-## :cherry_blossom: Community
+<h2>🌱 Community</h2>
+<p>Contributions are always welcome! Here’s how you can contribute to this open-source project.</p>
 
-If it's open-source, talk about the community here, ask social media links and other links.
+<h3>🔥 Contribution</h3>
+<p>We appreciate your contributions! Here’s how you can contribute:</p>
+<ol>
+    <li><strong>Report a bug:</strong> If you find a bug, please report it <a href="#">here</a>.</li>
+    <li><strong>Request a feature:</strong> If you have a suggestion for a new feature, feel free to request it <a href="#">here</a>.</li>
+    <li><strong>Create a pull request:</strong> You can contribute by submitting a pull request. Pick an open issue from <a href="#">here</a> and submit your changes!</li>
+</ol>
 
- ###  :fire: Contribution
+<p>If you're new to open source, check out this <a href="https://www.digitalocean.com/community/tutorial_series/an-introduction-to-open-source">guide on how to contribute</a>.</p>
 
- Your contributions are always welcome and appreciated. Following are the things you can do to contribute to this project.
+<h3>🌵 Branches</h3>
+<p>We follow agile development with continuous integration. Here’s the branch structure:</p>
+<ul>
+    <li><strong>`stage`:</strong> The development branch.</li>
+    <li><strong>`master`:</strong> The production branch.</li>
+</ul>
 
- 1. **Report a bug** <br>
- If you think you have encountered a bug, and I should know about it, feel free to report it [here]() and I will take care of it.
+<h3>⚡ How to Work with Feature Branches</h3>
+<ol>
+    <li>Create a new feature branch by naming it <code>feat-FEATURE_NAME</code>.</li>
+    <li>Make your changes and raise a pull request.</li>
+</ol>
 
- 2. **Request a feature** <br>
- You can also request for a feature [here](), and if it will viable, it will be picked for development.  
+<p>After review, the changes will be merged into <code>stage</code> and eventually into <code>master</code>.</p>
 
- 3. **Create a pull request** <br>
- It can't get better then this, your pull request will be appreciated by the community. You can get started by picking up any open issues from [here]() and make a pull request.
+<h3>⚠️ Guidelines</h3>
+<p>Please follow these coding and contribution guidelines:</p>
+<ul>
+    <li><strong>Code formatting:</strong> Follow consistent code formatting and indentation.</li>
+    <li><strong>Comments:</strong> Use meaningful comments where necessary.</li>
+    <li><strong>Commit messages:</strong> Write clear and concise commit messages.</li>
+</ul>
 
- > If you are new to open-source, make sure to check read more about it [here](https://www.digitalocean.com/community/tutorial_series/an-introduction-to-open-source) and learn more about creating a pull request [here](https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github).
+<h2>❓ FAQ</h2>
+<p>Feel free to add a FAQ section here if you think it will help users or contributors.</p>
 
+<h2>📚 Resources</h2>
+<p>Here are some useful resources for working on or learning from these projects:</p>
+<ul>
+    <li><a href="#">Link to resource 1</a></li>
+    <li><a href="#">Link to resource 2</a></li>
+</ul>
 
- ### :cactus: Branches
+<h2>📸 Gallery</h2>
+<p>Feel free to add images or screenshots of your projects here.</p>
 
- I use an agile continuous integration methodology, so the version is frequently updated and development is really fast.
+<h2>🌟 Credit/Acknowledgment</h2>
+<p>Special thanks to the contributors and community who made this project possible.</p>
 
-1. **`stage`** is the development branch.
-
-2. **`master`** is the production branch.
-
-3. No other permanent branches should be created in the main repository, you can create feature branches but they should get merged with the master.
-
-**Steps to work with feature branch**
-
-1. To start working on a new feature, create a new branch prefixed with `feat` and followed by feature name. (ie. `feat-FEATURE-NAME`)
-2. Once you are done with your changes, you can raise PR.
-
-**Steps to create a pull request**
-
-1. Make a PR to `stage` branch.
-2. Comply with the best practices and guidelines e.g. where the PR concerns visual elements it should have an image showing the effect.
-3. It must pass all continuous integration checks and get positive reviews.
-
-After this, changes will be merged.
-
-
-### :exclamation: Guideline
-coding guidelines or other things you want people to follow should follow.
-
-
-## :question: FAQ
-You can optionally add a FAQ section about the project.
-
-##  :page_facing_up: Resources
-Add important resources here
-
-##  :camera: Gallery
-Pictures of your project.
-
-## :star2: Credit/Acknowledgment
-Credit the authors here.
-
-##  :lock: License
-Add a license here, or a link to it.
+<h2>🔒 License</h2>
+<p>This project is licensed under the <a href="LICENSE">MIT License</a>.</p>

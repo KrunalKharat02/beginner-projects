@@ -1,152 +1,170 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-int main(){
-    int quant=0;
-    int m;
-    //Quantity
-    int qrooms=0, qpasta=0, qshake=0, qmaggie=0, qchicken=0;
-    //Sold number
-    int srooms=0, spasta=0, sshake=0, smaggie=0, schicken=0;
-    //Total price
-    int total_rooms=0, total_pasta=0, total_shake=0, total_maggie=0, total_chicken=0;
 
-    cout<<"\t Quantity of items in Hotel "<<endl;
-    cout<<"Enter total number of rooms available: "<<endl;
-    cin>>qrooms;
-    cout<<"Enter total number of pasta: "<<endl;
-    cin>>qpasta;
-    cout<<"Enter total number of shake: "<<endl;
-    cin>>qshake;
-    cout<<"Enter total number of maggie: "<<endl;
-    cin>>qmaggie;
-    cout<<"Enter total number of chicken roll: "<<endl;
-    cin>>qchicken;
+/*  [Explanation]
+    Hotel Management System:
+    - This program simulates a hotel management system where users can book rooms, order food, and view the sales information.
+    - The system tracks the availability of rooms, pasta, shakes, maggie, and chicken rolls.
+    - It allows users to book these items and generates revenue information based on the sales.
+*/
 
-    //Menu 
+int main() {
+    int quantity = 0; // Quantity for booking items
+    int menuChoice; // Menu choice input from user
+
+    // Available quantities of items in the hotel
+    int availableRooms = 0, availablePasta = 0, availableShakes = 0, availableMaggie = 0, availableChickenRolls = 0;
+
+    // Sold quantities of items
+    int soldRooms = 0, soldPasta = 0, soldShakes = 0, soldMaggie = 0, soldChickenRolls = 0;
+
+    // Total revenue generated from sales
+    int totalRevenueRooms = 0, totalRevenuePasta = 0, totalRevenueShakes = 0, totalRevenueMaggie = 0, totalRevenueChickenRolls = 0;
+
+    // Getting available quantities from the hotel manager
+    cout << "\t Quantity of items in Hotel " << endl;
+    cout << "Enter total number of rooms available: " << endl;
+    cin >> availableRooms;
     
+    cout << "Enter total number of pasta available: " << endl;
+    cin >> availablePasta;
+    
+    cout << "Enter total number of shakes available: " << endl;
+    cin >> availableShakes;
+    
+    cout << "Enter total number of maggie available: " << endl;
+    cin >> availableMaggie;
+    
+    cout << "Enter total number of chicken rolls available: " << endl;
+    cin >> availableChickenRolls;
+
+    // Hotel menu for the user to select from
     menu:
-    cout<<"Select from menu: "<<endl;
-    cout<<"1) Room "<<endl;
-    cout<<"2) Pasta "<<endl;
-    cout<<"3) Shake "<<endl;
-    cout<<"4) Maggie "<<endl;
-    cout<<"5) Chicken Roll "<<endl;
-    cout<<"6) Information of todays sale and collection "<<endl;
-    cout<<"7) Exit "<<endl;
+    cout << "Select from the menu: " << endl;
+    cout << "1) Room" << endl;
+    cout << "2) Pasta" << endl;
+    cout << "3) Shake" << endl;
+    cout << "4) Maggie" << endl;
+    cout << "5) Chicken Roll" << endl;
+    cout << "6) Information of today's sales and collection" << endl;
+    cout << "7) Exit" << endl;
 
-    cout<<"Please enter your choice: "<<endl;
-    cin>>m; 
+    cout << "Please enter your choice: " << endl;
+    cin >> menuChoice;
 
-    switch (m){
+    switch (menuChoice) {
         case 1:
-        cout<<"Enter number of rooms required: "<<endl;
-        cin>>quant;
-        if(qrooms-srooms>=quant){
-        srooms= srooms + quant;
-        qrooms= qrooms-quant;
-        total_rooms=total_rooms + (2000*quant);
-        cout<<"Booking successfull!!"<<endl;
-        }
-        else{
-            cout<<"Sorry!! We don't have sufficient rooms"<<endl;
-            cout<<"Available rooms are: "<<qrooms-srooms;
-        }
-        break;
+            cout << "Enter number of rooms required: " << endl;
+            cin >> quantity;
+            
+            if (availableRooms - soldRooms >= quantity) {
+                soldRooms += quantity;
+                availableRooms -= quantity;
+                totalRevenueRooms += (2000 * quantity);
+                cout << "Booking successful!" << endl;
+            } else {
+                cout << "Sorry! We don't have sufficient rooms." << endl;
+                cout << "Available rooms: " << availableRooms - soldRooms << endl;
+            }
+            break;
 
         case 2:
-        cout<<"Enter number of pasta required: "<<endl;
-        cin>>quant;
-        if(qpasta-spasta>=quant){
-        spasta= spasta + quant;
-        qpasta= qpasta-quant;
-        total_pasta=total_pasta + (300*quant);
-        cout<<"Booking successfull!!"<<endl;
-
-        }
-        else{
-            cout<<"Sorry!! We don't have sufficient pasta"<<endl;
-            cout<<"Available pasta are: "<<qpasta-spasta;
-        }
-        break;
+            cout << "Enter number of pasta required: " << endl;
+            cin >> quantity;
+            
+            if (availablePasta - soldPasta >= quantity) {
+                soldPasta += quantity;
+                availablePasta -= quantity;
+                totalRevenuePasta += (300 * quantity);
+                cout << "Booking successful!" << endl;
+            } else {
+                cout << "Sorry! We don't have sufficient pasta." << endl;
+                cout << "Available pasta: " << availablePasta - soldPasta << endl;
+            }
+            break;
 
         case 3:
-        cout<<"Enter number of shake required: "<<endl;
-        cin>>quant;
-        if(qshake-sshake>=quant){
-            sshake= sshake+ quant;
-            qshake= qshake-quant;
-            total_shake=total_shake+ (100*quant);
-            cout<<"Booking successfull!!"<<endl;
-
-        }
-        else{
-            cout<<"Sorry!! We don't have sufficient shake"<<endl;
-            cout<<"Available shake are: "<<qshake-sshake;
-        }
-        break;
+            cout << "Enter number of shakes required: " << endl;
+            cin >> quantity;
+            
+            if (availableShakes - soldShakes >= quantity) {
+                soldShakes += quantity;
+                availableShakes -= quantity;
+                totalRevenueShakes += (100 * quantity);
+                cout << "Booking successful!" << endl;
+            } else {
+                cout << "Sorry! We don't have sufficient shakes." << endl;
+                cout << "Available shakes: " << availableShakes - soldShakes << endl;
+            }
+            break;
 
         case 4:
-        cout<<"Enter total number of maggie required: "<<endl;
-        cin>>quant;
-        if(qmaggie-smaggie>=quant){
-            smaggie=smaggie+quant;
-            qmaggie=qmaggie-quant;
-            total_maggie =total_maggie+ (150*quant);
-            cout<<"Booking successfull!!"<<endl;
-
-        }
-        else{
-            cout<<"Sorry!! We don't have sufficient maggie"<<endl;
-            cout<<"Available maggie are: "<<qmaggie-smaggie;
-        }
-        break;
+            cout << "Enter total number of maggie required: " << endl;
+            cin >> quantity;
+            
+            if (availableMaggie - soldMaggie >= quantity) {
+                soldMaggie += quantity;
+                availableMaggie -= quantity;
+                totalRevenueMaggie += (150 * quantity);
+                cout << "Booking successful!" << endl;
+            } else {
+                cout << "Sorry! We don't have sufficient maggie." << endl;
+                cout << "Available maggie: " << availableMaggie - soldMaggie << endl;
+            }
+            break;
 
         case 5:
-        cout<<"Enter total number of chicken roll required: "<<endl;
-        cin>>quant;
-        if(qchicken-schicken>=quant){
-            schicken=schicken+quant;
-            qchicken=qchicken-quant;
-            total_chicken=total_chicken+ (470*quant);
-            cout<<"Booking successfull!!"<<endl;
-
-        }
-        break;
+            cout << "Enter total number of chicken rolls required: " << endl;
+            cin >> quantity;
+            
+            if (availableChickenRolls - soldChickenRolls >= quantity) {
+                soldChickenRolls += quantity;
+                availableChickenRolls -= quantity;
+                totalRevenueChickenRolls += (470 * quantity);
+                cout << "Booking successful!" << endl;
+            } else {
+                cout << "Sorry! We don't have sufficient chicken rolls." << endl;
+                cout << "Available chicken rolls: " << availableChickenRolls - soldChickenRolls << endl;
+            }
+            break;
 
         case 6:
-        cout<<"/t Information about sales and collection"<<endl;
-        cout<<" Number of rented rooms: "<<srooms<<endl;
-        cout<<" Remaining number of rooms: "<<qrooms-srooms<<endl;
-        cout<<" Income generated by renting rooms: "<<total_rooms<<endl;
+            // Displaying the information of sales and collection for the day
+            cout << "\t Information about sales and collection" << endl;
+            cout << "Number of rooms rented: " << soldRooms << endl;
+            cout << "Remaining rooms: " << availableRooms - soldRooms << endl;
+            cout << "Income generated by renting rooms: " << totalRevenueRooms << endl;
 
-        cout<<"Sold number of pasta: "<<spasta<<endl;
-        cout<<" Remaining number of pasta: "<<qpasta-spasta<<endl;
-        cout<<" Income generated by selling pasta: "<<total_pasta<<endl;
+            cout << "Sold pasta: " << soldPasta << endl;
+            cout << "Remaining pasta: " << availablePasta - soldPasta << endl;
+            cout << "Income generated by selling pasta: " << totalRevenuePasta << endl;
 
-        cout<<"Sold number of shake: "<<sshake<<endl;
-        cout<<" Remaining number of shake: "<<qshake-sshake<<endl;
-        cout<<" Income generated by selling shake: "<<total_shake<<endl;
+            cout << "Sold shakes: " << soldShakes << endl;
+            cout << "Remaining shakes: " << availableShakes - soldShakes << endl;
+            cout << "Income generated by selling shakes: " << totalRevenueShakes << endl;
 
-        cout<<"Sold number of maggie: "<<smaggie<<endl;
-        cout<<" Remaining number of maggie: "<<qmaggie-smaggie<<endl;
-        cout<<" Income generated by selling maggie: "<<total_maggie<<endl;
+            cout << "Sold maggie: " << soldMaggie << endl;
+            cout << "Remaining maggie: " << availableMaggie - soldMaggie << endl;
+            cout << "Income generated by selling maggie: " << totalRevenueMaggie << endl;
 
-        cout<<"Sold number of chicken: "<<schicken<<endl;
-        cout<<" Remaining number of chicken: "<<qchicken-schicken<<endl;
-        cout<<" Income generated by selling chicken-roll: "<<total_chicken<<endl;
-        cout<<"Total revenue generated: "<<total_rooms+total_pasta+ total_maggie+ total_shake+ total_chicken<<endl;
-    
-        break;
+            cout << "Sold chicken rolls: " << soldChickenRolls << endl;
+            cout << "Remaining chicken rolls: " << availableChickenRolls - soldChickenRolls << endl;
+            cout << "Income generated by selling chicken rolls: " << totalRevenueChickenRolls << endl;
+            
+            cout << "Total revenue generated: " << totalRevenueRooms + totalRevenuePasta + totalRevenueMaggie + totalRevenueShakes + totalRevenueChickenRolls << endl;
+            break;
 
         case 7:
-        cout<<"Thank you for visting!!"<<endl;
-        break;
+            cout << "Thank you for visiting!" << endl;
+            break;
 
         default:
-        cout<<"Re-enter correct option"<<endl;
-
+            cout << "Re-enter a valid option." << endl;
     }
-    cout<<endl;
+
+    cout << endl;
+    // Looping back to the menu
     goto menu;
+    
     return 0;
 }
